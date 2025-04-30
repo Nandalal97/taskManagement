@@ -4,7 +4,7 @@ This is the **Node.js + Express.js** backend for the Task Management System. It 
 
 ## 🔗 Frontend Repository
 
-👉 [Click here to view the React frontend](https://github.com/your-username/task-admin-panel)
+👉 [Click here to view the React frontend](https://github.com/Nandalal97/task-management-fronend)
 
 ---
 
