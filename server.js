@@ -23,8 +23,16 @@ app.use(helmet({
 }));
 
 // CORS config
+// app.use(cors({
+//   origin: ['http://localhost:8000','http://localhost:5173', 'http://localhost:5174'],
+//   methods: ['GET', 'POST', 'PUT', 'DELETE'],
+//   credentials: true
+// }));
+
 app.use(cors({
-  origin: ['http://localhost:8000','http://localhost:5173', 'http://localhost:5174'],
+  origin: function (origin, callback) {
+    callback(null, true);  // Allow all origins
+  },
   methods: ['GET', 'POST', 'PUT', 'DELETE'],
   credentials: true
 }));
